@@ -1,0 +1,17 @@
+﻿CREATE TABLE Estados(
+CODIGO VARCHAR (2) PRIMARY KEY NOT NULL,
+nome VARCHAR(90) 
+);
+
+CREATE TABLE Cidade(
+codigo INTEGER PRIMARY KEY NOT NULL,
+nome VARCHAR(90)
+);
+
+CREATE TABLE Cliente (
+  codigo INTEGER PRIMARY KEY NOT NULL,
+  nome VARCHAR(90),
+  cnpj INTERGER(14),
+  telefone_contato INTERGER(12),
+  email_contato VARCHAR(30)
+);
