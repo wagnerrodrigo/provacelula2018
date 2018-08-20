@@ -22,3 +22,12 @@ ALTER TABLE tb_cidade
 ADD CONSTRAINT FK_id_estado FOREIGN KEY (sigla) REFERENCES tb_estado(silga);
 
 
+
+ALTER TABLE tb_cliente
+ADD CONSTRAINT Fk_sigla_estado FOREIGN KEY (sigla) REFERENCES tb_estado(silga);
+
+
+ALTER TABLE tb_cliente
+ADD CONSTRAINT Fk_codigo_cidade FOREIGN KEY (codigo) REFERENCES tb_estado(codigo);
+
+
